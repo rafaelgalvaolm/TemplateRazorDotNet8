@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+        <UserSecretsId>aspnet-projetoRazor-ee350fc8-762b-415d-a759-067552cd138b</UserSecretsId>
+        <PublishProfile>DefaultContainer</PublishProfile>
+    </PropertyGroup>
+    <ItemGroup>
+        <Using Include="projetoRazor" />
+        <Using Include="projetoRazor.Data" />
+        <Using Include="projetoRazor.ServiceModel" />
+        <Using Include="ServiceStack" />
+        <Using Include="ServiceStack.Mvc" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.*" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.*" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.*" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.*" />
+        <PackageReference Include="Markdig" Version="0.34.*" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.*" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.*" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.*" />
+        <PackageReference Include="ServiceStack.AspNetCore.OpenApi" Version="8.*" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ServiceStack" Version="8.*" />
+        <PackageReference Include="ServiceStack.Mvc" Version="8.*" />
+        <PackageReference Include="ServiceStack.Server" Version="8.*" />
+        <PackageReference Include="ServiceStack.Extensions" Version="8.*" />
+        <PackageReference Include="ServiceStack.OrmLite.Sqlite.Data" Version="8.*" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\projetoRazor.ServiceInterface\projetoRazor.ServiceInterface.csproj" />
+        <ProjectReference Include="..\projetoRazor.ServiceModel\projetoRazor.ServiceModel.csproj" />
+    </ItemGroup>
+
+</Project>
